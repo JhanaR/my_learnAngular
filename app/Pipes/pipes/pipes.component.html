@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="col-3">
+        coursename: {{coursename}}
+        <br>
+        Adding pipe upper: {{coursename | uppercase}}
+        <br>
+        Adding pipe upper: {{coursename | lowercase}}
+    </div>
+    <div class="col-3">
+        studentList -{{studentList}}
+        <br>
+        studentList -{{studentList | json}}
+    </div>
+    <div class="col-3">
+        currentDate -{{currentDate}}
+        <br>
+        currentDate -{{currentDate | json}}
+        <br>
+        currentDate -{{currentDate | date}}
+        <br>
+        currentDate -{{currentDate | date:'dd-MMM-YY'}}
+        <br>
+        currentDate -{{currentDate | date:'hh:mm:ss'}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-1">
+        <ul>
+            <li *ngFor="let city of cityList">{{city}}</li>
+        </ul>
+    </div>
+    <div class="col-5">
+        <button *ngFor="let city of cityList" class="btn btn-success mx-1">{{city}}
+        </button>
+    </div>
+    <div class="col-8">
+        <div *ngFor="let city of cityList">
+            <span>{{city}}</span>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <select>
+            <option *ngFor="let emp of employeeArray" [value]="emp.empId">
+                {{emp.name}} - {{emp.city}} - {{emp.contactNo}}
+            </option>
+        </select>
+    </div>
+    <div class="col-8">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Mobile No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emplo of employeeArray;let srNo = index">
+                    <td>{{srNo+1}} </td>
+                    <td>{{emplo.name | pipeConcept}} </td>
+                    <td>{{emplo.city | uppercase}}</td>
+                    <td>{{emplo.contactNo}} </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
