@@ -1,0 +1,53 @@
+<button class="btn btn-success" (click)="navigateAdmin()">Navigate to Admin</button>
+<div class="row">
+    <div class="col-6">
+        1.Interpolation
+        <div>firstName => {{firstName}}</div>
+        <p>rollNo => {{rollNo}}</p>
+        <span>isActive => {{isActive}}</span>
+        <h6>currentDate => {{currentDate}}</h6>
+    </div>
+    <div class="col-6">
+        2.Property Binding
+        <input type="text" name="" [value]="firstName" id="">
+        <br>
+        <input type="text" name="" [value]="myPlaceholder" id="">
+        <br>
+        <div [class]="div1ClassName" style="height:100px;width:100px">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="showWelcomeMessage()">Welcome Button</button>
+    </div>
+    
+    <div class="col-3">
+        3.Using Event Binding
+        <select (change) ="onChangeCity()">
+            <option value = ""> </option>
+            <option value = "Chennai"> Chennai </option>
+            <option value = "Trivendram"> Trivendram </option>
+            <option value = "Hyderabad"> Hyderabad </option>
+            <option value = "Delhi"> Delhi </option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    4.Two Way Data Binding: variable and input element will be sync.
+    <div class="col-3">
+        <br>
+        <br>
+        <input type="text" name="text" [(ngModel)]="firstName">
+    </div>
+    <div class="col-3">
+        <select [(ngModel)] ="selectedCity">
+            <option value = ""> </option>
+            <option value = "Chennai"> Chennai </option>
+            <option value = "Trivendram"> Trivendram </option>
+            <option value = "Hyderabad"> Hyderabad </option>
+            <option value = "Delhi"> Delhi </option>
+        </select>
+        --{{selectedCity}}
+    </div>
+</div>

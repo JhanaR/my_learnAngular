@@ -1,0 +1,90 @@
+<!-- <h1 class="text-main2">Angular 19</h1> -->
+<!-- <p class="text-main1">{{title}}</p>
+<p class="text-main">Main component</p> -->
+<!-- <app-admin></app-admin>
+<app-user></app-user> -->
+<!-- <app-data-binding></app-data-binding> -->
+<!-- <app-ng-if> </app-ng-if> -->
+<!-- <app-ng-for></app-ng-for> -->
+<!-- <app-ng-class> </app-ng-class> -->
+<!-- <app-ng-style></app-ng-style> -->
+<!-- <app-control-statement></app-control-statement> -->
+<!-- <app-signal></app-signal> -->
+<!-- <app-linked-signal></app-linked-signal> -->
+<!-- <app-template-form></app-template-form> -->
+<!-- <app-reactive-form></app-reactive-form> -->
+ <!-- <app-resource-api></app-resource-api> -->
+
+<!-- <table style="width: 100%;">
+    <thead>
+        <td>
+            <app-admin></app-admin>
+        </td>
+        <td>
+            <app-user></app-user>
+        </td>
+    </thead>
+
+</table> -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <!-- <li class="nav-item"  style="margin-top:-12px;">
+          <a class="nav-link active" routerLink="admin">Admin</a>
+        </li> -->
+        <li class="nav-item" >
+          <a class="nav-link active" routerLink="admin">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'dataBinding'">Data Binding</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Signal
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="signal">Signal</a></li>
+            <li><a class="dropdown-item" routerLink="linked-signal">Linked-Signal</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Forms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="template-form">Template-Form</a></li>
+            <li><a class="dropdown-item" routerLink="reactive-form">Reactive-Form</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            API Call
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="get-api">GET-api</a></li>
+            <li><a class="dropdown-item" routerLink="post-api">POST-api</a></li>
+            <li><a class="dropdown-item" routerLink="put-api">PUT-api</a></li>
+            <li><a class="dropdown-item" routerLink="delete-api">DELETE-api</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="Resource Api">Resource Api</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

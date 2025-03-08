@@ -1,0 +1,162 @@
+<div class="row">
+  <div class="col-8" text-center>
+    <h2>POST API Integration using Template Form</h2>
+  </div>
+  <div class="col-4">
+    <button class="btn btn-success" (click)="getAllCars()">Load Cars</button>
+  </div>
+</div>
+
+<div class="row pt-2">
+  <div class="col-7">
+    <div class="card">
+      <div class="card-header bg-warning">
+        <h5>Car List</h5>
+      </div>
+      <div class="card-body">
+        <div class="col-6 mt-2">
+          <label>Reg No</label>
+          <input
+            type="text"
+            [(ngModel)]="carObj.RegNo"
+            class="form-control"
+            placeholder="Enter registration number"
+          />
+        </div>
+        <div class="col-6 mt-2">
+          <label>Brand</label>
+          <input
+            type="text"
+            [(ngModel)]="carObj.Brand"
+            class="form-control"
+            placeholder="Enter brand name"
+          />
+        </div>
+        <div class="col-6 mt-2">
+          <label>Model</label>
+          <input
+            type="text"
+            [(ngModel)]="carObj.Model"
+            class="form-control"
+            placeholder="Enter model name"
+          />
+        </div>
+        <div class="col-6 mt-2">
+          <label>Year</label>
+          <input
+            type="text"
+            [(ngModel)]="carObj.Year"
+            class="form-control"
+            placeholder="Enter year"
+          />
+        </div>
+        <div class="col-6 mt-2">
+          <label>Color</label>
+          <input
+            type="text"
+            [(ngModel)]="carObj.Color"
+            class="form-control"
+            placeholder="Enter color"
+          />
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Brand</th>
+              <th>Model</th>
+              <th>Daily Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for(car of carList; track $index){
+            <tr>
+              <td>{{ $index + 1 }}</td>
+              <td>{{ car.brand }}</td>
+              <td>{{ car.model }}</td>
+              <td>{{ car.regNo }}</td>
+              <td>{{ car.dailyRate }}</td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-5">
+    <div class="card">
+      <div class="card-header bg-warning">
+        <h5>Create New Car</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6 mt-2">
+            <label>Reg No:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Reg no"
+            />
+          </div>
+
+          <div class="col-6 mt-2">
+            <label>Brand:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter brand name"
+            />
+          </div>
+
+          <div class="col-6 mt-2">
+            <label>Model:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter model name"
+            />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Year:</label>
+            <input type="text" class="form-control" placeholder="Enter Year" />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Color:</label>
+            <input type="text" class="form-control" placeholder="Enter Color" />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Year:</label>
+            <input type="text" class="form-control" placeholder="Enter Year" />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Color:</label>
+            <input type="text" class="form-control" placeholder="Enter Color" />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Daily rate:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Daily rate"
+            />
+          </div>
+          <div class="col-6 mt-2">
+            <label>Car image Url:</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Car Image url"
+            />
+          </div>
+          <div class="row">
+            <div class="col-22 mt-2 text-center">
+              <button class="btn btn-primary m-2">Reset Form</button>
+              <button class="btn btn-success m-2" (click)="onSavecar()">Save Car</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

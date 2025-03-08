@@ -1,0 +1,2690 @@
+UI Full Stack Development 
+
+Savitha 
+8+ Fullstack development in both front-end and back-end
+
+-- Application
+
+what is front-end?
+
+  user interface(visible to the user)
+
+what is back-end?
+
+ server-side development mainly deals with databases,scripts and architecture 
+
+what is full-stack?
+
+  comprises both front-end and back-end technologies with deployments
+
+=================================================================================================
+
+ Course Content
+
+ Course Duration: 3 Months
+ class : Mon-Sat
+ Time: 7:30pm - 9 pm
+
+ Advantages with Ashok IT
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1) Live Online Training
+2) Soft Copy Material
+3) doubts clarifications
+4) back up videos -- 6 months access
+5) telegram group for communication
+6) Resume preparation
+7) Placement assistance
+
+--------------------------------------------------------------------------------------------
+
+ HTML -> Hyper text markup(mark the content as certain text ex: bold,italic) language 
+
+ -> tags 
+
+ -> HTML was invented by Sir Tim Berners Lee
+ -> HTML is used to develop static pages(static content)
+ -> It can be saved with ".html" or ".htm" 
+
+   Offline Editors
+   Online Editors 
+   IDE(Integrated Development Environment)
+
+   Visual Studio Code was developed by Microsoft .It is Open source
+
+   how can we execute HTML?
+
+   With the help of Browsers : Google Chrome,IE(edge), Mozilla,Opera
+
+   How can we apply styles to my webpage(html page)
+
+   -> CSS(cascading style sheets) 
+
+      => Color
+      => Background color
+      => Border
+      => Margins
+      => Padding
+  
+   how can we make webpages dynamic?
+ 
+   through scripting language called javascript, used to convert static content to dynamic content
+
+ 
+   We will build web pages using tags : <html><head><title><body><p><img> etc.....
+
+================================================================================================
+
+  history of HTML
+
+ => created by Sir Tim Berners-Lee
+
+    HTML => 1991 => failure version , HTML1.0 
+
+    HTML 1.0 Strict => 1993 
+    HTML 2.0 => 1995 
+    HTML 2.0 Transitional => 1997 => first version of HTML was devloped by W3C
+     => form elements
+     => support of css
+
+    HTML3.2 => 1999 => HTML4.01 => scripting ,multimedia and more over features added
+    XHTML 
+    HTML5 - 2014 -- success => graphics,animations,video,sounds etc
+    HTML5.1 ,5.2 ,5.3 
+
+    HTML5.x supports the APIS 
+
+    main features of HTML5
+
+     => Responsiveness
+     => Storages => Local Storage and Session Storage
+     => Location API => used to get the geographical position of a user
+     => Audio and Video => used to play audio and video on web pages 
+     => Web Socket API => two way interactive communication 
+     => Web Worker API  => running in the background
+     => Canvas API and SVG Api => drawing graphics(canvas) => 2D Vector Graphics
+
+=============================================================================================
+
+   Software Installation
+
+   -> IDE(VS Code) https://code.visualstudio.com/
+   -> Browsers(Google Chrome,Edge,Mozilla)
+   -> plugins in Visual Studio Code
+      => Live Server Extension
+      => Lorem ipsum Extension
+
+tomorrow is the last demo class 
+
+============================================================================================
+
+  Structure of Web Page
+
+  Version of HTML/doctype 
+
+  root section
+     => head section
+          metadata
+     => body section
+         content of web page 
+
+  <head> is used to describe the header of the HTML 
+   can include the following tags => title, style, 
+
+  <!DOCTYPE html> 
+  <!DOCTYPE> <!-- HTML 4.01 -->
+
+  HTML Elements
+
+  HTML Attributes => provides additional information about the elements(name = "value")
+------------------------------------------------------------------------------------------
+  HTML Headings
+
+  h1 ,h2,h3 ,h4 ,h5 and h6 
+  
+ h1 => Main Heading h2 to h6 => Sub headings 
+
+  Semantic Elements was introduced in HTML5
+
+  <header> <footer> <article> <strong> 
+ 
+  header content goes into header tag 
+
+===================================================================================
+
+ 1) Open Editor
+ 2) Write some text
+ 3) Apply formatting
+ 4) Add paragraphs and line breaks(<br/>)
+ 5) create some text and add bold and italic 
+
+  achieve bold 
+  -> <b> tag
+  -> style (inline styling)
+  -> <em>
+
+  <p> is a generic container
+  <span> is a generic inline container
+
+  => Work with text related tags
+  => Work with images
+  => Work with links
+  => Work with tables
+  => Work with iframe,frameset,div and span => get this detailed in css
+  => Work with forms
+  => HTML5 new Tags
+
+    Text Related tags
+      1. Heading tags      : h1 ,h2,h3,h4,h5 and h6
+      2. Font related tags : font,i,b,u,s,small,big
+      3. List Tags         : ordered list => ol,li unordered list => ul,li , definition list => dl,dt,dd
+      4. Other tags        : span,input ,form,header,footer,address,p,marquee,pre,br,strong,hr
+
+     Syntax: <ol type=""><ol></ol></ol>
+              <ol type=""><ul></ul></ol>
+
+     pre => pre formatted tag
+
+--------------------------------------------------------------------------------------------------------------
+   Work with images
+
+   <img src="Source"  alt="Alternate Text"  title="Description"  height=""  width=""> 
+
+--------------------------------------------------------------------------------------------------------------
+
+  Work with Links
+
+  <a href="AddressURL"> HyperText </a>
+  <a href="index.html" > <a>
+
+----------------------------------------------------------------------------------------------------------------
+
+ Work with tables
+
+ 1.<table>
+ 2.<caption>
+ 3.<thead>
+ 4.<tr>
+ 5.<tbody>
+ 6.<td>
+ 7.<th>
+
+  colspan and rowspan 
+
+<table>
+  <caption>Course Data</caption>
+  <thead> 
+     <tr>
+        <th>Candidate id</th>
+        <th> Name </th>
+        <th> Tech Stack </th>
+        <th> Branches </th>
+        <th> Course Fees</th>
+        <th> Address </th>
+      </tr>
+   </thead>
+   <tbody>
+     <tr>
+        <td>01</td>
+        <td>krish</td>
+        <td>Java</td>
+        <td>K R Puram</td>
+        <td>7000</td>
+        <td>K R puram</td>
+     </tr>
+    </tbody>
+  </table>
+
+  frames and frameset 
+
+  frame => are used to divide your browser window into multiple sections . treat a seperate document
+
+  frameset => collection of frames in the browser 
+  
+   https://webflow.com/made-in-webflow/website/relume-cloneable
+
+  <frameset>
+       <frame>Frame1</frame>
+       <frame>Frame2</frame> 
+  </frameset>
+
+  HTML 5 doesnot support frame tag
+==================================================================================================
+
+  form => is a container used to group elements 
+ 
+  1.form
+  2.label => Labelling
+  3.input => input data
+
+  <form name="NameOfForm" id="IdOfForm" method="Get/Post" action="AddressOfServer">
+
+  => Secure (POST) => is encrypted and data is sent to server => Unlimited
+  => Insecure (GET) =>Limited data to servers
+
+ Drop Down => <select>
+                  <option></option>
+                  <option></option>
+             </select>
+
+  id and name of html elements
+
+  ids are used by browsers for uniqueness
+  names are used by back end servers for uniqueness
+
+====================================================================================================================
+
+  HTML5 New Tags
+
+  1. Input Tags
+
+    <input type="time"> 
+    <input type="url">  
+    <input type="week"> 
+    <input type="search"> Search Box
+    <input type="number" value="1" min="1" max="10" step="0.5">
+    <input type="month">
+    <input type="email">
+    <input type="datetime-local">
+    <input type="color">
+
+2. HTML5 Semantic Tags
+
+  <article>   Defines an article in an Document
+  <main>      Defines the main content of a document
+  <section>   Defines a section of a document
+  <header>    Defines a header for a document
+  <footer>    Defines a footer for a document
+  <figure>    Defines Self-contained & <figcaption>
+  <nav>       Defines Navigation links
+  <mark>      Define marked/highlighted text 
+  <summary>   Defines a visible heading for <details> element
+  <address>   Defines the contact details
+  <audio> and <video>
+
+
+  Audio - mp3, aac
+  Video -- mp4, avi
+
+  SVG and Canvas 
+
+  HTML5 introduced the two graphical elements canvas and svg for creating rich UI on the web .they are syntatically different 
+
+  Canvas => revisit in Javascript
+  => used for drawing 
+  => container for graphics 
+  use a script to actually draw the graphics
+
+  SVG
+
+  => Stands for Scalable Vector Graphics
+  => define graphics for the web
+  => has several methods for drawing boxes,circles,text and graphic images
+  => language for describing 2D Graphics in XML
+
+==================================================================================================
+
+ CSS => Cascading Style Sheets => applying styles to the web page
+
+ ways of applying styles to my webpages
+
+ style style="property1:value;property2:value;................propertyN:value"
+
+ 1.Inline      =>  <p style="color:blue"> 1st precedence
+ 2.Internal    =>  <style></style> 2nd Precedence
+ 3.External    =>  external css files 3rd Precedence 
+ 
+ !important attribute 
+
+ text-align 
+ color
+ background-color
+ font-size
+ font-family
+ width
+ height
+ border => border : size(px) type(solid,dashed) color
+
+ padding: 5px (it is applied on all sides left,right,bottom,top)
+
+ Types of Selectors in CSS
+
+ 1. Element Selector(Tag) => add styles to html
+
+    htmlElement {
+                  property1:value;
+                  property2:value;
+   }
+
+2. Id Selector 
+
+   ids are unique all over the application(browser) 
+  
+       #idName {
+                  property1:value;
+                  property2:value;
+       }
+
+3. Class Selectors
+
+   classes can be multiple over all the application
+
+   .class-name {
+                  property1:value;
+                  property2:value;
+       }
+
+4. Universal Selector
+   *{
+
+    }
+   
+   used to select all the elements
+
+   CSS Box Model
+
+   Margin,Border,Padding,Content,Fill Area
+
+  html tag with id and class selectors 
+===================================================================================
+
+  CSS Pseudo classes
+
+  matches components based on an additional condition
+  
+  selector: pseudo-class { property:value} 
+
+    a:link{
+            color:red; //unvisited
+        }        
+        a:hover{
+            color:green
+        }
+        a:visited{
+            color:brown //visited
+        }
+        a:active{
+            color:yellow
+        }
+
+  short hand property: background,border
+  
+  CSS3 Features
+ 
+  Border:  border-radius : rounded corners
+ 
+  The text is written The text is written  ...
+
+   Display Property => how the elements are arranged in webpage 
+    
+   Block ,
+   inline => cannot add width height property(span is inline level element)
+   inline-block => add width and height property 
+   None 
+
+   Flex => content should get auto adjusted 
+
+   flex requires a container 
+ 
+   Grid: A grid is a pattern of horizontal and vertical lines that cross each other to make a set    of squares 
+
+   grid also requires container
+
+  =================================================================================
+ 
+  position property in css => 
+
+  this property specifies how an element is positioned in a document, top,right,bottom,left
+
+  Static  => default position 
+  Relative
+  Fixed => position is fixed
+  Absolute
+  Sticky => come content on scroll to be fixed
+
+  position: relative places an element relative to its current position without changing the layout
+  position: absolute places an element relative to its parent position changing the layout
+
+================================================================================================
+
+  Media Queries
+
+  @media(min-height:300px and max-width:768px){
+   .box{
+        height:50px
+    }
+  }
+=================================================================================================
+
+  Bootstrap => Responsive Web design framework(HTML & CSS)
+
+  mobile-first 
+
+  Bootstrap,the worlds most popular framework for building responsive websites.
+
+  => it writes Internal CSS 
+  => Browser goes to that page and carry entire CSS into cache memory
+  => By default it will apply some style to elements
+  => provides built in components which are responsive
+  => comprises HTML,CSS ,fonts
+
+  display => d-{xs,sm,md,xl,xxl}-displayproperty
+
+  .d-none => not display
+   xs => extra small device
+   md => medium device
+   xl => extra large
+   xxl => double large device
+
+  margin & padding -> spacing
+
+   {property}{sides}-{size}
+
+   size => 1368*725 
+  
+  !important => practise 
+
+  take 4 images span across the page(12 columns in standard)
+
+  4 images in large device(3 columns) 
+
+  2 images in medium device(6 columns)
+
+  1 image in small device(12 columns)
+
+  Google Fonts => 
+
+ font-awesome
+
+============================================================================================
+
+   
+  MERN/MEAN
+
+  Mongo
+  Express
+  React
+  Node
+
+  Javascript is the base for Node and Express,React 
+
+  What is Javascript ? why ? Benefits
+
+  html dynamic => javascript 
+
+  => is a Client Side Scripting Language 
+  => Javascript is a high level and interpreted programming language
+  => It is mainly developed as a Network Centric Application
+  => Integrated with HTML
+ 
+   Why to learn Javascript?
+
+   Succesful Web Programmer
+    -> Most Popular Scripting Language
+
+  Javascript Frameworks / Libraries
+    Angular 
+    React
+    JQuery
+    Vue JS
+    Node js
+
+  HIGH LEVEL and INTERPRETED
+
+  High Level Language is written in simple english language statement where the user can understand 
+
+  Interpreted Language is ready to run as soon as you are done typing 
+
+  => Javascript was originally developed by Brendan Eich => Netscape Communications Coropration
+
+    ECMA rules was followed by Javascript 
+
+  How Javascript was created?
+
+  90's was the era of internet and browsers
+  
+  in 1992 a web browser called mosiac
+  
+  1993 by NSAC(web browser) 
+
+  in 1995's Netscape Communications
+
+  NSAC and Netscape together developed and released browser called Mozilla(Mosiac and Godzilla)
+
+  Static Web Pages
+
+  to introduce dynamic web pages with more animations and interactions
+
+  HTML alone was not able to do the job . 
+
+  Scripting neeeded to do the job .
+
+  Mocha Script =>initial version of javascript renamed as Livescript and finally Javascript 
+
+  Java is completely back end language and javascript is purely from front-end language
+
+  Javascript was associated with netscape navigator in december 1995 . 
+
+  this is not related to java in way or any means
+
+  ECMA  is a standard organization for communication.
+  
+  Javascript was bounded by this Specification . 
+
+  ES1, ES3 ... ES6 it is known as TypeScript 
+
+============================================================================================================
+
+ How Javascript works?
+
+ with respective of each browser,the vendor given a plugin in the browser i.e javascript engine
+
+ what is javascript engine?
+
+ list of browser javascript engines
+
+ https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
+
+ Options to write javascript code
+
+  -> Online Editors
+  -> Offline Editors
+  -> IDE
+
+  Traditional Javascript was used for only preparing browser side logics
+   1. Form Validation text,email,pwd
+   2. Dynamically Show data (drop down)
+   3. prepare Alert and Confirm box
+   4. display current date and time
+
+Novel javascript used to prepare server side logics
+
+   1. OTP Creation,sending and verification
+   2. Phone Email Notification
+   3. Chat box
+   4. Email and Password Validations
+   5. Forgot Password 
+
+    Advantages :
+  => less syntax
+  => no semi colon
+  => Dynamic typed
+            int age;            var age;
+            float height;       var height;
+     age = 10 //datatype of age number
+
+  => Supports Exception handling, threading , regular expressions
+  => it supports functional programming + object oriented programming
+  => Client side validation(JS) + Server Side Validation(TS)
+
+   Core Javascript & Advanced Javascript(TS)
+
+ How many ways we can write and test our javascript code?
+
+  1. Any browser Console
+  2. Inside HTML Code under <script> tag
+  3. Seperate Javascript code in a file 
+
+=> Comments in javascript
+   comments are ignored by javascript engine
+
+  1.Single Line Comment //
+  2.Multi Line Comment /* */
+
+  Keywords are reserved words in a language because they are reserved for specific purpose
+
+  Javascript has 46 keywords 
+
+   All keywords are given by compiler(JS Engine) before we use any kwywords ,the developer must    know how to use it and when to use it 
+
+
+  https://www.programiz.com/javascript/keywords-identifiers
+================================================================================================
+
+ Q. Tokens in javascript 
+
+    1. What is Literal?
+    2. What is an Identifer?
+    3. What is Variable and how to declare it?
+    4. What is Constant and how to declare it?
+    5. What is DataType and Explain types of DataTypes ?
+
+    6. What is an Operator and List of Operators
+    7. What are Control Statements and types of Control Statements
+
+   Literal => value inside register(container)
+   Identifier => name given to the register
+
+   Variable => A varaiable is a register which literal/value can be varied
+
+   Constant => A constant is a register which literal/value cannot be varied
+
+   Data Type decides 2 factors about Register
+
+   1. what type of literal it has to store
+   2. what is the size of literal 
+
+
+  1.Binary Numbers           0b1011001011    2 (0,1)
+  2.Octal Numbers            027             8 (1..7)
+  3.Decimal Number           27              10(0,1..9)
+  4.Hexadecimal Numbers      0x27            0,1...9,A,B,C,D,E,F
+
+======================================================================================
+
+   Rules for declaring the identifier
+
+   Rule 1: An identifier should be combination of following character set
+           1. Alphabets  -- A-Z,a-z
+           2. Digits --- 0-9
+           3. Special Symbol -- _(underscore),$
+
+   Rule 2: An Identifier shouldnt start with digit 
+   Rule 3: An Identifier should not use a keyword (46 keywords)
+   Rule 4: Multiple Identifiers should be seperated by comma 
+
+  var/const keywords are used to declare identifiers
+
+  syntax : var/const identifierName 
+
+           var studentAge ; // valid
+           var subject1;    //valid
+           var 1subject;    //Rule2 violating
+           var student_gender ; //valid
+           var student$height; //valid
+           var _city;     //valid
+           var #Hno;      //invalid Rule1 and Rule2
+           var course1,course2,course3 // valid
+           var If,Else,Var;     //valid
+           var if,else,var,let // invalid Rule3
+===================================================================================================
+
+            studentAge =>var
+            studentDOB =>const
+
+   variable => in javascript "var" is a keyword to declare variables
+               syntax;
+                     var variableName;
+               example;
+                     var studentAge
+
+  constant => in javascript "const" is a keyword to declare constants
+              syntax;
+                     var identifierName= literal;
+               example;
+                     var studentDOB=2000;
+                     var GST=18;
+
+====================================================================================================
+
+    console.log()
+     
+     var studentAge1=15;                   var studentAges=[15,18,20];
+     var studentAge2=18;
+     var studentAge3=20;                   
+
+    primitive data type                   non primitive data type can store multiple values
+    storing single value
+    in a identifier
+
+   1.Number                               1.Arrays
+   2.Boolean                              2.Objects
+   3.String
+
+    console.log(typeof "Leela"); //String
+	console.log(typeof false);  // boolean
+	console.log(typeof {name:'Peter',age:25});  //object
+	console.log(typeof 0); //number
+	console.log(typeof null); // 
+	console.log(typeof 67888.333); //number
+	console.log(typeof NaN); //number
+	console.log(typeof function(){}); //function
+	console.log(typeof new Date()); //object
+	console.log(typeof myClass); //undefined
+
+=================================================================================
+
+  Operators
+
+  c = a + b 
+
+  1. A Expression is a collection of operands + operators
+
+  2. Operators are used between the operands to perform a specific operation
+
+    3 types of Expressions
+
+       Expr1              Expr2                     Expr3 
+        a++                a+b                       a?b:c
+
+     Unary Operator(Single Operand) 
+     Binary Operator(2 Operands)
+     Ternary Operator(3 operands)
+
+   there are 8 types of operators
+  
+ Unary 
+   1. Increment and Decrement Operators(++,--)
+   2. Minus      (-)
+ Binary                       
+   3. Arithmetic Operator (+,-,*,/,%)
+   4. Assignment Operator (=) 
+   5. Relational Operator(<,>,<=,>=,!=,==,===,!==)
+          All Relational Operators will give boolean values (true or false)
+   6. Logical Operator(&&,||,!)
+          Logical Operators are used to check more than one condition and returns boolean value
+   7. Bitwise Operator(&,|,^,~,<<,>>)
+        are used between 2 bits
+  Ternary 
+   8. Conditional Operator(?,:)
+         used between 3 operators 
+
+ =============================================================================
+ 
+ Increment and Decrement 
+
+ pre increment and post increment
+ pre decrement and post decrement
+
+   ++a = pre increment => a=a+1
+   --a = pre decrement => a=a-1
+
+  Ex1: var x=45;
+       console.log(++x) // 46
+
+  Ex2: var x=40;
+       console.log(++x + ++x) // 83
+
+  Ex3: var x=45;
+       console.log(--x) //44
+
+  Ex4:  var x=40;
+       console.log(--x + --x); //77
+
+ a++ => post increment => a=a+1
+ a-- => post decrement => a=a-1
+
+  post value is incremented but not displayed immediately after .next time 
+
+  Ex1: var x = 45;
+       console.log(x++) // 45 
+       console.log(x)   // 46
+
+  Ex2: var x=40;
+       console.log(x++ + x++) //81
+       console.log(x) //42
+
+  Ex3: var x=55
+       console.log(x-- + x--) // 109
+       console.log(x) // 53
+
+=======================================================================================
+
+   minus => changing the sign of operand 
+
+   b=c=d=e=10 
+   z = x+y
+   
+   x=5 
+   x++ + --x + ++x + x-- //22
+   
+    == (entered mail id matches with your existing mail id)
+	= (db email ) and = (db password)  email && password 
+       
+    if(condition)       OR   conditional(?,:)
+	{
+	  stmt1;
+	}
+	else
+	{
+	  stmt2;
+	}
+	    
+    syntax:
+	condition ? stmt1:stmt2
+	
+    PS: To check given number if positive or not
+	
+	code :
+	       var num=88;
+		   if(num>0){
+		      console.log("Positive");
+			  }
+			  else{
+			  console.log("Negative");
+			  }
+			num>0 ? "Postive":"Negative"
+    PS: to check num is even or odd
+            num/2 == 0 ? "Even":"Odd"
+    PS: Leap Year
+           var year = 2020;
+            year%4==0?"Leap":"Not Leap"
+
+===========================================================
+      var age = 100;
+	  //age should be greater than 18 and less than 100
+         if(age>18 && age<100){
+              console.log("valid");
+         }else{
+             console.log("not valid");
+          }			
+
+    Calculate the area of Circle
+
+    PS 1: find area of circle : pi*radius*radius
+
+          const pi=3.14;
+          var areaOfCircle,radius;
+              radius=3.6;
+          areaOfCircle = pi * radius * radius;
+              console.log(areaOfCircle);
+			 console.log("The area of circle is "+areaOfCircle); //Template literals
+			 
+	PS 2: Find the Simple Interest SI = PTR/100
+	
+==================================================================================
+Control Statements
+---------------------------------
+   Js Engine taking the control of my code .i need to take control of code so we go for 
+   control statements
+   
+   1.Decision Making Statements  
+      if
+	  if-else
+	  multiple-if-else
+	  switch
+      nested-if-else
+
+   2. Loop Statements
+         if we want to repeat some set of statements in execution
+	  while
+	  do-while
+	  for
+	 1. Indefinite Loop(not particular no of times)
+	    while 
+		do-while
+	 2. Definite Loop(particular no of times)
+	    for
+		
+		differences btw while and do-while
+		do-while regardless of condition it will get executed once but while will execute if and only of condition is true
+	 
+        differnce btw while and for is
+         for loop is used when the number of iterations are known
+         while loop,execution is done until the condition is unsatisfied		 
+		
+		formed based on 4 factors
+		1.Loop begin point
+		2.Loop endding point
+		3.Loop Statements
+		4. Inc/Dec
+
+   3.Jump Statements 
+	  break 
+	  continue
+	  
+	Node js is a server environment to execute javascript code outside the browser
+	
+	https://nodejs.org/en/ install LTS => cmd prompt =>node -valid
+	
+      if
+	    used to test a condition returns boolean value 
+		If Statements gets executed under if block if the condition returns "true"
+	  syntax:
+	     if(condition)             if(condition)
+		 {                            statement1;
+		    statements;
+		 }
+	  if-else
+	      These keywords used to test a condition to return boolean value
+	      Statement1 gets executed under if block if the condition returns "true"
+		  Statement2 gets executed under else block if the condition returns "false"
+	  syntax:
+	       if(condition){
+		     Statement1;
+			}else{
+			Statement2;
+			}
+			
+	  multiple-if-else
+	       Preparing multiple if-else with dependency
+		   
+		syntax:
+		     if(condition1){
+					statement1;
+				} else if(condition2){
+					statement2;
+				}else if(condition3){
+					statement3;
+				}else if(condition4){
+					statement4;
+				}else{
+					statement5;
+				}
+	  switch
+	      one condition one functionality 
+		  switch is used to prepare "menu driven programming"
+		  
+		switch -- use to prepare all the cases
+		case   -- used to prepare functionality for each case`
+		break  -- used to stop the functionality
+		default  -- default functionality if none of the cases will match
+	 
+        syntax:
+        switch()	
+
+      var accountBalance = 1500, depositAmount = 500, withdrawalAmount = 2500;
+		var userChoice = 'withdraw';
+		switch (userChoice) {
+				case 'accountbalance': console.log("Your Account Balance is ", accountBalance);
+						break;
+				case 'deposit': accountBalance += depositAmount;
+						console.log("Deposit done and your updated balance is ", accountBalance);
+						break;
+				case 'withdraw': if (accountBalance > withdrawalAmount) {
+						accountBalance -= withdrawalAmount;
+						console.log("withdrawal done and your updated balance is ", accountBalance);
+				}
+				else {
+						console.log("Insufficient funds");
+				}
+				   break;
+				case 'ministatement': console.log("Mini statement is after withdrawal and deposit---", accountBalance)
+						break;
+				default: console.log("Invalid Choice(account doesnt exist,server error,card not supported)");
+						break;
+		}
+
+   Task : Rewrite above Problem using IF ELSE	
+
+
+		var i = 1
+		while (i <= 9) {
+			console.log(i);
+			i += 2;
+		}   
+
+		var i=1;
+		do
+		{
+			  console.log(i);
+			  i+=2;
+		}while(i<=9)
+
+		for(var i=1; i<=9; i+=2)
+		{
+			console.log(i);
+		}		
+==============================================================================
+    for(var i=1;i<=10;i++){
+	      if(i==5)
+		    console.log(i);
+	}
+	
+    for(var i=1;i<=10;i++){
+         if(i==5)
+            break;
+         else  
+            console.log(i)
+    }			
+    for (var i = 1; i <= 10; i++) {
+    console.log("i======= ", i)
+    if (i == 2)
+        continue;
+    else
+        console.log(i);
+    }
+    console.log("after continue");
+	
+===========================================================================
+   Math Class  MATH Methods
+    sin(90) = 1
+	tan(45) = 1
+	cos(0) = 1
+	sqrt(64) = 8
+	pow(2,3) = 8
+	
+	var x=896,y;
+	while(x>0){
+	  y=x%10;
+	  console.log(y);
+	  x=Math.floor(x/10);
+	 }
+	
+	PS: divide the number into digits
+	
+	var num=896;
+	var rem;
+	while(num>0){
+	  rem=num%10;
+	  console.log(rem);
+	  num=Math.floor(num/10);
+	 }
+	 
+	hint: 896 % 10 => 6           /  896/10 => 89 
+	       96 % 10 => 6              89/10  => 8
+		    6 % 10 => 6               8/10  => 0
+			
+==============================================================================
+
+   var num = 7532;
+   var rem;
+   var sum=0;
+     while(num>0){
+	   rem = num%10;
+	   sum +=rem;
+	   num = Math.floor(num/10);
+	 }
+	console.log(sum);
+	
+=======================================================================
+      var num=9638;
+	  var rem;
+	  var x=0;
+	  while(num>0){
+	    rem=num%10;
+		x=(x*10)+rem;
+		num=Math.floor(num/10);
+		}
+		console.log(x);
+		
+    Programs:                                             5463
+	1. Count the number of digits in a given number       4
+	2. Average of digits                                  4.
+    3. Sum of even digits in a number                     10
+    4. Sum of odd digits in a number                      8
+    5. Print even digits in a number                      4 6
+    6. Print odd digits in a number                       5 3
+    7. Print Large digit in a number                      6
+    8. Print small digit in a number	                  3
+	
+====================================================================================
+    PS: sum of first 'N' Natural Numbers
+	
+	 N=4   1+2+3+4 = 10
+	 
+	 code :
+	        var n=6,sum=0;
+			for(var i=1;i<=n;i++)
+			{
+			    sum+=i; //i=1 sum=1,i=2 sum=3,i=3 sum=6,i=4 sum=10
+			}
+	PS : Print factorial of a number
+	
+	    n=4  1*2*3*4 =>24
+		n=5  1*2*3*4*5 =>120
+		
+	code :
+	       var n=5,fact=1;
+		   for(var i=n;i>=1;i--){
+		     fact = fact*i;
+		   }
+		   console.log(fact);
+		   i=5  fact=5
+		   i=4  fact = 5*4 = 20
+		   i=3  fact = 20*3 = 60
+		   i=2  fact = 60*2 = 120
+		   i=1  fact = 120*1 = 120
+		   
+	 PS:  Print table of numbers: 
+	      n=5
+		  5*1 = 5
+		  5*2 = 10
+		  ...
+		  5*10 = 50
+		   
+	 code: 
+	       var n=5;
+		for(var i=1;i<=10;i++){
+			console.log(n,'*',i,'=',(n*i));
+		}
+	
+	PS: print factors of a number
+	    n=8  1,2,4,8
+		n=6  1,2,3 = 6
+		n=10 1,2,5,10
+		n=28 1,2,4,7,14 = 28
+		n=40 1,2,5,8,10,20,40
+		
+		n=8    n%1 == 0       1,2,4  are the factors
+		       n%2 == 0
+		       n%3 == 2
+			   n%4 == 0
+	    n=12   n%1 = 0      1,2,3,4,6 
+		       n%2 = 0
+			   n%3 = 0
+			   n%4 = 0
+			   n%5 = 2
+			   n%6 = 0
+			   
+	    code :
+		       var n=40;
+				for(var i=1;i<=(n/2);i++){
+				  //  console.log(i);
+					if(n%i == 0){
+					   console.log(i);
+					}
+				}
+				console.log(n);
+				
+	Program: check if the number is perfect number 
+	Program: check if number is prime or not 
+	
+    PS: 0,1,1,2,3,5,8,13,21,34,55,89
+	
+	    take 2 numbers 
+		0,1 0 as firstNum,1 as secondNum,nextNumber = firstNum+secondNum
+		0+1 = 1 0,1,1,
+		0+1+1 = 2 0,1,1,2
+		1+2 = 3 0,1,1,2,3
+		
+		print first 10 numbers in fibonacci series
+		var firstNum=0,secondNum=1;
+		console.log(firstNum,secondNum);
+		for(var i=1;i<=8;i++){
+	      var nextNumber = firstNum+secondNum;
+		  console.log(nextNumber);
+		  firstNum = secondNum;
+		  secondNum = nextNumber;
+	    }
+		
+==============================================================================
+
+    Steps to prepare code:
+	1. Declare all inputs and outputs variable in logics
+	2. Assign some values to input variables
+	3. Perform Business Logic
+	4. Compute the final output and display 
+	
+	PS1 : addition of 2 numbers 
+	     var num1,num2,addResult;
+	     addResult = num1+num2;
+	     console.log(addResult);
+		 
+	PS2: cube of number         
+	     var num,cubeResult;
+		 cubeResult= num*num*num;
+	PS3: find SimpleInterest
+	PS4: find areaOfCircle
+	PS5: find averageOfNumbers
+	PS6: find (a+b)^2
+========================================================================
+
+    Non-Functional Programming v/s Functional Programming Approach
+	
+	As per the SW guidelines we should not repeat code
+	Do Not Repeat Yourself
+	
+	Drawbacks:
+	1. Duplication of code(no reusability of code)
+	2. More space and time complexity
+	3. Less Readability
+	4. Extensibility is difficult 
+	5. No Modularity (dividing main program into sub program)
+	
+	Functional Programming 
+	
+	javascript -- functions
+	typescript -- methods
+	
+	function  addition(num1,num2)
+	{   
+	  var addResult;     
+	  addResult = num1+num2;
+      console.log(addResult);
+	}
+	
+	addition(10,20)
+	
+	function  subtraction(num1,num2){   --function header
+	  var subResult;      //function body
+	  addResult = num1-num2;
+      console.log(subResult);
+	}
+	
+	Advantages of Functional Programming
+	
+	1. No duplication of code (reusability)
+	2. less space and less complexity
+	3. More Readability
+	4. Extensibility is simple
+	5. Modularity(easy to organize and maintain)
+	
+	1.Calling Function
+	2.Called Function
+	3.Use of "function" keyword
+	4.Parameter List v/s Argument List
+	5.Function Preparation ways :4 ways
+	6.Function Declarations
+	7.Function Expressions
+	8.Arrow Functions/Anonymous Functions/Lambda functions
+	9.Nested Functions
+	10.IIFE 
+	11.Recursion Functions
+	12.Callback functions
+	
+	function is a set of statements which can be called multiple times
+	
+	Function preparation ways:
+	
+	Type 1: With Parameter list and with return value
+	Type 2: With Parameter list and without return value
+	Type 3: Without Parameter list and with return value
+	Type 4: Without Parameter list and without return value 
+	
+	A function with parameter list 
+	   when there is different input for same business logic 
+	   
+	when a function must return value?
+	   ex: returning the books to your sibling who is going to study the same
+	   
+	   PS : perform total,average,grade of 6 subjects maths
+	        total(s1,s2,s3,s4,s5,s6) => return total
+			average(total); => grade
+			grade(grade);  
+		    one function one task
+	  
+    when a function need not to have return value?
+	
+	    function doSum(num1,num2)
+		{
+		      var add;
+			  add = sum1+sum2;
+			  console.log(add);
+		}
+		doSum(1,2);
+		
+	Type 1: With Parameter list and with return value
+	
+		    function totalMarks(s1,s2,s3,s4,s5,s6){
+				var result;
+				result = s1+s2+s3+s4+s5+s6;
+				return result;
+			}
+			var result = totalMarks(45,65,67,78,78,78);
+			
+	Type 2: With Parameter list and without return value
+	
+	         function totalMarks(s1,s2,s3,s4,s5,s6){
+				var result;
+				result = s1+s2+s3+s4+s5+s6;
+				console.log(result);
+			}
+			totalMarks(45,65,67,78,78,78); 
+			
+	Type 3: Without Parameter list and with return value
+	
+	          function totalMarks(){
+				var result;
+				const s1=45,s2=56,s3=67,s4=89,s5=89,s6=78,
+				result = s1+s2+s3+s4+s5+s6;
+				console.log(result);
+				return result;
+			}
+			totalMarks(); 
+			
+			function areaOfCircle(radius){
+			    var result;
+				const pi=3.14;
+				area = pi*radius*radius;
+				return area;
+			}
+		
+		Type 4: Without Parameter list and without return value 
+	
+	            function totalMarks(){
+					var result;
+					const s1=45,s2=56,s3=67,s4=89,s5=89,s6=78,
+					result = s1+s2+s3+s4+s5+s6;
+					console.log(result);
+			   }
+    Task :
+	PS1 : addition of 2 numbers 
+	     var num1,num2,addResult;
+	     addResult = num1+num2;
+	     console.log(addResult);
+		 
+	PS2: cube of number         
+	     var num,cubeResult;
+		 cubeResult= num*num*num;
+	PS3: find SimpleInterest
+	PS4: find areaOfCircle
+	PS5: find averageOfNumbers
+	PS6: find (a+b)^2
+	
+	As a UI Fullstack Developer
+	
+	1. get the Figma/Adobe mockups from client
+	2. Design the Sample Webpage(static) and send for approval
+	3. Understand the business logic
+	4. Decide on inputs and outputs(middle and backend) API
+	5. Dont assume anything
+	6. What browsers client supports and responsive
+	7. Performance application
+    8. Code review and refactoring the code
+	
+=====================================================================================
+   Scope => visibility
+   Local Variable v/s Global Variable 
+   
+   Hoisting => using the variables before declaring them
+    
+   var v/s const v/s let 
+
+   1. We can do redeclaration using var but using let we cannot do redeclaration
+   2. Hoisting is overcome in let 
+   3. let is block level scoped whereas var is not block level scoped
+   
+   Javascript is Synchronous and its Single Threaded language 
+   
+   Nested Functions:
+            function inside function
+	function functionName(){ //Outer Function
+	          function function2Name(){ //Inner Functions
+			  }
+	}
+   
+   function averageMarks(html, css, js) //main outer function{
+
+		function totalMarks(html, css, js) //outer function1 {
+			
+			function sample() //inner function{
+			}
+			return (html + css + js);
+		}
+		return totalMarks(html, css, js);
+    }
+	
+	Function Expression : = operator has to come immediately 
+	
+=================================================================================
+    IIFE => Immediately invoked function expressions
+	
+	Function Expression v/s IIFE
+	
+	1. in IIFE called function and calling function are together,whereas in Function Expression they are seperate 
+	2. in function expression = (operator) is not executed immediately whereas in IIFE it 
+	    is executed immediately  while returning the value 
+
+    11.Recursion Functions
+	   function calling itself 
+	   function one(){                       function one(){
+	   
+	    ......                                    one();
+		
+	   }                                      }
+	   one();                                 one();
+	   
+	   PS : Print factorial of a number
+	   PS : Print the factors of number using recursion
+	   
+  Callback functions => passing function as arguments to another function is known as callbacks
+  
+  ======================================================================================
+
+    Array is used to store multiple elements in single variable 
+
+     Array index starts from 0
+ 
+     what is Array()
+     how to create Array?
+	      1. let array1 = [] || [1,2,3,4]
+		  2. let array1 = new Array();
+     length property 
+     how to acess Array elements first ,second , for
+     how to modify array element?
+     const Arrays
+	   with const Arrays re-assignment is not possible
+	   updating particular index is possible 
+     Array Methods
+       ADD REMOVE => push() ,pop()  => act at end of the array
+	              => unshift(),shift() => act at start of array 
+				  
+	   Task : check return types of unshift and shift 
+	   concat(),sort(),slice(),tostring()
+       reverse()
+       indexOf(), lastIndexOf()
+       forEach() , map() , filter() , reduce(),
+       every(), some() => returns boolean value 
+	   find ()  
+       splice()	=> only will change the original array (add,delete,add and delete)
+	   , join()    
+	   
+	   PS : if the element present in array continue or else
+	   
+	   Array Packing and Unpacking 
+	   
+	   //Array Packing
+	     let a = 10;
+		 let b = true;
+		 let c = "Apple";
+		 let array1 = [a,b,c]; 
+		 
+	   // Array Unpacking 
+	      let x,y,z ;
+		  [x,y,z] = array1;
+		   console.log(x);
+		   console.log(y);
+		   console.log(z);
+		   
+		array unpacking using rest operator(...) 
+		
+================================================================================
+    Strings 
+	      => Array/Group/Collection/Sequence of Characters
+		  
+	Strings can be prepared in 2 ways
+	   1. let myString = "Apple";
+	   2. let myString = new String("Apple");
+	   
+	   Strings can be represented in 3 ways
+	   1. using single quote('')
+	   2. using double quote("")
+	   3. using back ticks(``)
+	   
+	   Today session is on 'Strings'
+       Today session is on "Strings"
+  
+      String Templates 
+          using back tiks we can bind expression in strings
+		  
+		  NaN => Not a Number
+		  Number.NaN 
+		  isNaN() => converts your arg into number and then perfoms a check
+		  isNaN() converts the value to a number before testing it
+		  isNaN() => returns true if value is Not a Number
+		  isNaN() => returns false if value is a Number 
+		  
+		  
+		  isNaN(0); // false
+		  isNaN('Hello'); // true
+		  isNaN('2005/12/12'); // false
+		  isNaN(' '); // false
+		  isNaN('$'); // true
+
+      String Methods 
+          length , charAt(),
+		  charCodeAt() => returns ascii value of character in given string
+		  toLowerCase(), toUpperCase()
+		  replace(old,new) => only first occurence from left side 
+		  replaceAll(old,new) => all the occurences
+		  repeat(count) => repeats the string with specified count
+		  startsWith(prefix) => it returns true if prefix matches
+		  endsWith(suffix)  => it returns true if suffix matches
+		  search(value) => starting index of Value
+		  indexOf()
+		  lastIndexOf()
+		  substr(startIndex,length) => returns string starting from startIndex and length 
+		  slice(startIndex,endIndex) => returns string starting startIndex and less than endIndex
+		  substring(startIndex,endIndex) => returns string starting startIndex and less than endIndex
+		  trim() => removing blank spaces before and after the string
+		  split() => converting String into words
+		  concat()	  
+		  https://www.programiz.com/javascript/library/string
+		  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+		  
+		
+      "Apple".length;
+		5
+		"Apple".charAt(0)
+		"A"
+		"Apple".charAt(1)
+		"p"
+		"Apple".charAt(2)
+		"p"
+		"Apple".charAt(3)
+		"l"
+		"Apple".charAt(4)
+		"e"
+		"Apple".charAt(5)
+		""
+		"Apple".charAt(8)
+		""
+		"Apple".charAt(-1)
+		""
+		65
+		"Apple".charCodeAt('A')
+		65
+		"Apple".charCodeAt(8)
+		NaN
+		"Apple".charCodeAt('u')
+		65
+		"Apple".charCodeAt('O')
+		65
+		"App123pple".charCodeAt(3)
+		49
+		"App123pple".charCodeAt(4)
+		50
+		"App[]pple".charCodeAt(4)
+		93
+		"Apple".toLowerCase();
+		"apple"
+		"Apple".toUpperCase();
+		"APPLE"
+		"Apple".replace('p','q');
+		"Aqple"
+		"Apple".replaceAll('p','q');
+		"Aqqle"
+==================================================================================
+
+     student = [ 501,23,6.2,54,78.63,'A','Krish','Kumar',['Singing','dancing','cooking'],
+	            [9876543212,123456789],['English','Hindi']];
+				
+            student[8] 
+			
+	let objectName = { 
+	                   "key1":value,
+					   "key2":value,
+					    .....
+					   "keyn":value 
+					  }
+					  
+	let student = {
+	                "rollNumber":501,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Krish",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36,
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  }
+				  
+	JSON => Javascript Object Notation
+
+    let studentArray = [{
+	                "rollNumber":501,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Krish",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":511,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Ajay",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":515,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Vijay",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  },
+				  {
+	                "rollNumber":518,
+					"age":23,
+					"height":6.2,
+					"weight":54,
+					"percentage":78.63,
+					"grade":'A',
+					"firstName":"Lavanya",
+					"lastName":"Kumar",
+					"hobbies":['Singing','dancing','cooking'],
+					"phoneNumbers":[9876543212,123456789],
+					"languages":['English','Hindi'],
+					"address": {
+					              "hNo":"5-8/36",
+								  "roadNumber":8,
+								  "street":"K R Puram",
+								  "pincode":560043
+					           }
+				  }]	
+			product={
+  "description": "(Renewed) DELL Latitude 5490 Core i5 8th Gen Laptop, 16 GB RAM, 256GB SSD, Intel HD Graphics, 14 inch (36.83 cms) HD Screen, Windows 11 (Upgraded), MS Office, Black, Slim",
+  "rating": 1,
+  "MRP": 59999.00,
+  "price": 29605,
+  "discount": "50%",
+  "offers": [
+    {
+      "bankOffer": "750InstantDiscont",            },            {               "noCostEMI":"ordersAbove3000"            },            {              "partnerOffers":"packWorth999"            }],      "specification":{                   "Brand":"Dell",                   "Series":"737-cr",                   "screen-size": "14inches",                   "colour":"black" }}
+	  
+	Task : Design an Employee Object 
+	       Arrays,Object,Array of Objects, Object inside Object 
+		   
+		   Employee : Eid
+		              name : {firstName:value , middleName, lastName }
+					  nominee: string 
+					  gender: string
+					  salary: number
+					  address: { hNo, roadNumber, street ,pincode}
+					  accountDetails : [{bankAccount1=> bankAddress = {}},{bankAccount2}] = [{{}},{}]
+					  hobbies:[]
+					  education : [{},{},{}]
+					  
+	    JavaScript Object Notation Preparation ways :
+		1. Single Object Preparation
+		2. Multiple Object Preparation
+		
+		let laptop = {
+		               "company":"dell",
+					   "cost": 45000,
+					   "color":black
+					  }
+					  
+		let laptops = [{
+		               "company":"dell",
+					   "cost": 45000,
+					   "color":black
+					  },
+					  {
+		               "company":"hp",
+					   "cost": 5000,
+					   "color":black
+					  }]
+					 
+	How to access Object Keys value
+	1. Using .(period) operator
+    2. Using [] Operator
+    3. Using ?. operator
+    4. Using For in Loop 	
+	
+	if the key value contains space or any other special character it is not treated as key in
+	.(period) notation.whereas in others it is treated as key only
+	2 and 3 are recommended
+	
+    4. syntax:
+	       for(const variable in object){
+		     //statement
+			}
+			
+    Q1. How to add a new pair to an existing object ?
+	Q2. Can we store duplicate Keys in Object ?
+	Q3. How to update an existing object value?
+	Q4. How to delete existing one pair in Object?
+	
+	2. If we add duplicate key the old value will be replaced by New Value(latest)
+	  company => lenovo
+	  
+	1. syntax : objectName["newKey"] = value;
+	
+	3. syntax : objectName["existingKey"] = newValue;
+	
+	4. syntax : delete objectName["existingKey"] => delete keyword 
+	
+	Methods in Objects
+	
+	1. Object.keys(objectName) => Return all keys in object
+	2. Object.values(objectName) => Return all values in object
+	3. Object.entries(objectName) => Return all keys and values 
+	
+=====================================================================================
+
+    if even the type is number browser returns string on 
+	document.getElementById()
+	
+	Input and Output Functions in javascript
+	
+	Output Functions:
+	1. alert()
+	2. confirm()
+	3. document.write
+	4. console.log()
+	
+	Input Function
+	1. prompt()
+	==========================================================
+	
+	Ashok IT Channel => Playlist => how to use git 
+	==========================================================
+	
+	Javascript Events 
+	
+	Def: event is an action performed on dom elements
+	
+	button was clicked => onclick
+	button was clicked twice => ondblclick
+    pressing keys => onkeypress
+    .......
+
+    1.mouse related events
+       onclick,ondblclick,onmouseenter,onmouseleave
+	2. key related events
+	   onkeyup, onkeydown , onkeypress 
+	3. focus related events
+	   onblur, onfocus
+	4. form related events
+	   onsubmit,onreset
+	5. other events
+	   onload,onunload,onselect,oncopy,onchange,.....
+	   
+	   http://127.0.0.1:5500/www.facebook.com?customerName=&checkInDate=&noOfDays=2&c1=TV&c1=Laptop&rb1=AC&select=2+Bed+Room
+	   
+	 Javascript Arrays and Objects
+	 ====================================
+	 Display
+	 Add
+	 Delete
+	 
+	 Task : Updation
+	 
+	 Objects change forEach to map
+	 
+============================================================================
+
+    Exception Handling
+	
+	Compile time errors => Generated due to improper syntax
+	     Ex: le x=100; //compile time error
+		 
+    Run time errors => Generated due to improper logic
+	            Ex: console.log(y);  //Error
+				
+	Logical Errors
+	            Ex: let ar = [1,3];
+				    console.log(ar[5]);
+					
+    TRY => This keyword used to prepare block of code which monitors the errors/exceptions
+	       1. If Exception occurs control goes to catch block
+           2. If the Exception doesnt occur then control goes to finally block
+		   
+    CATCH => This Keyword used to prepare block of code which handles the exceptions
+	         that are raised by try block
+			 1. After Catch the control goes to finally block
+	FINALLY => This Keyword is used to prepare block of code which will execute in 2 cases
+	          1. If there is no exception in Try block
+			  2. If there is exception then try,catch and finaly block
+			  
+	THROW => This keyword used to throw the exception information to catch block
+
+=======================================================================================
+
+    this keyword 	
+	
+	using this keyword we can access current object members
+	
+	 var text = "savi1t34ha"; 
+	 var withNoDigits = text.replace(/[0-9]/g, '');
+	 
+	 https://www.freecodecamp.org/news/how-to-use-javascript-collections-map-and-set/
+	 
+	 https://kangax.github.io/compat-table/es6/
+	 
+ ( function(){
+    setTimeout(()=>console.log(1),2000);  
+    console.log(2); 
+    setTimeout(()=>console.log(3),0); 
+    console.log(4);
+ }) ();
+			
+	https://www.bing.com/search?q=diff+btw+ES5+and+ES6&cvid=0557a2c1349e433eba1d79f9077408e4&aqs=edge..69i57.6540j0j1&FORM=ANAB01&PC=U531
+	
+	demo.ts => Compilers/Transpilers => demo.js 
+	
+	=> npm install --global typescript
+	
+	https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DYUwLgBADiBODOB7AdgQQOYgFzIK4FsAjOCAXggCYBWAbgChRIYEUA5AQ323jFgEtk6MhADkAZXYA3PmAAW7EfUYQ-8ALLsAVolhZCiRKHbJhvXCCA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Cstage-2%2Ctypescript&prettier=false&targets=&version=7.20.1&externalPlugins=&assumptions=%7B%7D
+
+    Typescript 
+	
+	=========================================================
+	Data declaration with types
+	
+	   Javascript                         Typescript
+	   
+	syntax: let variableName              let variableName:datatype = value;
+	
+	I. Primitives(nbs)
+	
+	        let personAge = 21            let personAge:number = 21;
+			let personName = 'Krish'      let personName:string = 'Krish';
+			let isMajor = true            let isMajor:boolean = true;
+			
+    II.Non Primitive (ao)
+	       let familyAges = [21,33,44]    let familyAges:number[] = [21,33,44]
+		   let person = {                 let person:object = {
+		             
+		        personAge:21,                    personAge:21,
+				personName:"Krish",              personName:"Krish",
+				isMajor:true                     isMajor:true
+		   }
+	
+	    let x:number = 10; //valid
+		let y:number = 'Apple' // not valid
+		
+	III.Generic Data type as Primitive: any => It allows any type of data 
+	    syntax:
+		    let variableName : any = value;
+		    let fruitName: any = 'Apple';
+			
+	    Generic Data Type as Non Primitive 
+		
+		    let x: any[] = [100,200,300];
+		
+	    let familyAges = [21,33,44]    let familyAges:any[] = [21,33,44,"savitha"]
+	
+	    =>tsc demo1.ts
+		=>node demo1.js
+	    => ts-node demo1.ts
+		
+	2. Function Declaration with Return Types
+	
+	  JS                                        TS
+	called function
+	function functionName(parameter list){      function FunctionName(param1:datatype
+	  //body                                       param2:datatype):returnType{
+	  return value ;                                //body
+	}                                               return value ; 
+	calling function                               }
+	functionName(arg list) 
+	
+	return type has only 2 options
+	1) void and (number boolean string array object)
+
+    PS: Print Hello using TS Function (without parameters and without return value)
+        function showMsg():void {
+          console.log("Hello");
+        }
+        showMsg();		
+		
+    PS: Prepare a Function it takes argument as an array and returns sum of first and last element
+	
+	Ex1: [1,2,3] => 4
+	Ex2: [10,20,30,40,50] => 60
+	
+	PS: take array as as argument then you have to swap the elements
+	    [1,2,3] = [3,2,1]
+		
+====================================================================================
+
+   Object Oriented Features in Javascript
+   
+   1. how to declare data?
+   2. how to declare functions?
+   
+      Blue Print / Plan 
+	  Blue Print => House => 100s of Houses
+	                Class    Objects 
+					
+	Blue Print => Color                      house1 object = blue color 
+	              Interior 
+				  function addColor(){
+				  }
+				  
+	Hs1 =< BLue, Hs2 => Orange  ,Hs3 ,Hs4 
+   
+     Class       Imaginary thing in world/ Blue print 
+	 Object      Physcical Existence /It is a instance of a class
+	 
+	 Flower as a blue print 
+	 lily,jasmine , rose
+	 
+	 syntax : 
+	 class ClassName {
+	     //data 
+		 //functions/methods
+	 }
+	 let objectName = new ClassName();
+	 
+	 class Flower{
+	 }
+	 let rose = new Flower()
+	 
+	 Encapsulation
+	     Wrapping of data and functions/methods together is known as encapsulation
+		
+	  class ClassName {
+	     //data 
+		 AccessModifier dataName:dataType;
+		 AccessModifier dataName1:dataType;
+		 //function
+		 AccessModifer functionName1(param1:datatype,.......paramn:datatype):returntype{
+		    //body
+			return value ;
+		 }
+		 AccessModifer functionName2(param1:datatype,.......paramn:datatype):returntype{
+		    //body
+			return value ;
+		 }
+	 }
+	 n2 = 10 ;
+	 Access Modifer: using following access modifer we can provide scope to our class members
+	 
+	 1.Private : These members can be visible to current class members only 
+	 2.Public:   These members can be visible to outside any class 
+	 3.Protected : These members can be visible from parent to child class
+	 
+	 Javascript interview : Question 7 
+	 
+	     Employee {
+		 //Data + Constructor
+		 //Methods
+		 public constructor(public empname:string,public empage:number,public maritalStatus:boolean,
+             public height:number){
+		
+		   }
+		 public showEmployeeInfo(){
+		 
+		 }
+		 }
+		 
+		 Task : take phoneNumber as array and print it 
+		 
+		 https://jsonplaceholder.typicode.com/
+		 
+		 https://www.postman.com/downloads/
+		 
+		 https://reqres.in/
+		 
+		 Task: Consume data from any fake rest apis
+		 
+		 when the data member is part of constructor access modifier is mandatory 
+		 
+	Inheritance
+		 
+		  extending features from one class to another class
+		  
+    Adv:
+	    Code Reusability
+		
+	Representation 
+	     class C1{}
+		 
+		 class C2 extends C1{}
+		 
+	this keyword 	
+	      this keyword used to access "current class object members(data/methods/constructor)"
+			  
+    super keyword 
+	      used to access "parent class object members(data/constructor/methods" from child class
+		  
+ OOPS :
+       Encapsulation 
+	     -- class preparation
+		 -- access modifiers(public,private,protected)
+		 -- declare data
+		     -- instance variable
+			 -- static variable 
+			 -- Setters(Mutators)
+			 -- Getters(accessors)
+		 -- constructor function 
+		 -- declare methods
+		    -- instance methods
+			--static methods
+		--Usage of one class by another class
+		-- Object Creation
+	  Inheritance :
+	    -- extends keyword
+		--types of inheritance
+		-- super and this keyword
+		
+		
+	  Modules in Typescript
+	    --import and export
+		
+	  Interface
+	  Abstract 
+	  
+	  =============================================================
+	  
+	 2 types of methods
+	 
+	 1. Methods depend on objects
+	 2. Methods which do not depend on objects
+	 
+	 typescript will not support 2 types of inheritance 
+	 1. multiple inheritance
+	 2. Multipath Inheritance
+	 
+	 Interfaces
+	 
+	 interfaces can have only method declaration not method definition
+	 no initialization in interface is allowed whereas implemented class
+	 initialization is mandatory
+	 
+	 Abstract Class 
+	   We need one combination of allow method definition and allow method declaration
+	   
+	   interface Vehicle{
+	      start():void;
+		  stop():void;
+		  mileage():void;
+	   }
+	   class Bike implements Vehicle{  
+	       start():void{}
+		   stop():void{}
+		   mileage():void {}
+		   contructor(public x:number{
+		   }
+	   }
+	   
+	 constructor(rollNumber:number,name:string){
+        this.rollNumber=rollNumber;
+        this.name=name;
+     }
+     public set dataVariable(dataVariable:dataType){
+	 }
+	 public get dataVariable(){
+	 }
+	 
+	 Initialisation in case of primitive data types is manadatory
+	 any data type it doesnt matter 
+	 
+	 Experimental Decorators Setting 
+	 -> tsc stage.ts --experimentalDecorators
+	 
+	 -> node stage.js
+	
+	  object has to have key value pair 
+	  enum doesnt neccesarily need a key (automatically)
+	  
+==================================================================================
+	  
+	  Synchronous and Asynchronous Communication 
+	  
+	  Synchronous is executing line by line single threaded
+	  Javascript is Synchronous 
+	  
+	  Asynchronous Programming means multi threaded
+      callbacks,ajax,fetch,promises	 
+
+       Timer Functions in javascript 	
+
+       setInterval is Continuous (intervalTime)
+       setTimeout is not Continuous (delayTime)
+	   
+	   Three Images loaded on web page
+	   
+	   1 image is 120kb -- 3 secs
+	   2 image is 145kb -- 4 secs`
+	   3 image is 2mb   -- 6 secs
+	                       13 seconds
+						   
+		3 image is 2 mb 
+		1 and 2 according to 3 => 6 seconds
+	   
+
+	    Image1  => Image2 => Image3 ======== Synchronous
+		
+		Image1  =>  Asynchronous 
+		Image2  =>
+		Image3  =>
+		
+	Zomato Application Order Flow :
+	
+	   Order Placed                          -- after 2 seconds 
+	   Order is confirmed by restaurant      -- .5 seconds(1/2 seconds)
+	   Food is preparing                     -- 10 seconds
+	   Order is ready                        -- 1 second
+	   Order has been packed                 -- 3 seconds
+	   Delivery boy has picked up your order  -- 2 secons
+	   Delivery boy on the way                --.5 seconds
+	   Delivery boy has reached your home     -- 3 seconds
+	   Order is delivered                     -- 5 seconds
+	   feedback
+	   
+	   prerequisite
+	   1) setTimeout 
+	   2) function expression and arrow function 
+	   
+	    let add = function(a,b){
+		    return a+b;
+		}
+		let add = (a,b) =>{
+		  return a+b;
+		}
+		
+		class Addition{
+		   public constructor(public a:string,public b:string){
+		   }
+		}
+		let a:number = 100;
+		let b:number = 200;
+		let obj = new Addition(a,b);
+		
+		function sayHi():void{
+		}
+		
+		function sayBye():void{
+		}
+		
+		let obj1 = new Addition(sayHi,sayBye);
+		
+		let promObj = new Promise(resolve,reject);
+		
+		let promise1 = new Promise((resolve,reject) => {
+		     --- resolve()
+			 --- reject()
+		 }
+		 
+		 promise1.then(doSomething1)
+		         .then(doSomething2)
+				 .then(doSomething3)
+				 .catch((error) => {})
+				 .finally ()
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+		
+		async and await 
+		async : makes a function return Promise 
+		        async function functionName():void{
+				}
+		
+		await makes a function wait for a promise 
+		
+		    async function createOtp(){
+			  //some logic here
+			  create otp               5
+			}
+			async function sendOtp(){
+			   await createOtp();      3
+			   send otp to phoneNumber 4
+			} 
+			1 await sendOtp(); //once createOtp is resolved then sendOtp is called
+			
+			=============================================================
+			
+			async function createOtp(){
+			  //some logic here
+			  create otp               5
+			}
+			async function sendOtp(){
+			   send otp to phoneNumber 4
+			}
+			await createOtp();//once createOtp is resolved then sendOtp is called
+			await sendOtp();
+			
+			https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+			
+			callbacks                   promises                     async / await
+		
+		  asynchronous                asynchronus                     asynchronous
+	   
+	      print(string,callback)      new Promise{                    async 
+			                           resolve                        await 
+									   reject }
+	      callbacks hell              nest the promises               then 
+
+                                      .then()                         async  -- asynchronous
+                                      .then()                         await 
+                       									  
+	                                  promises can handle one event    can handle multiple events
+						
+==================================================================================================
+
+        Node JS => run time javascript library 
+		built on V8 Engine 
+		
+		2009 by Ryan Dahi v0.10.36
+		
+		https://nodejs.org/en/download/ -- installation 
+		
+		Features of Nodejs
+		
+		Asynchronous and Event Driven : 
+		
+		Very Fast : API Communication 
+		
+		No Buffering : output the data in chunks (portion by portion 100)
+		
+		Single Threaded but Highly scalable : 
+		
+		---------------------------------------------------------------
+		
+		Where to use Node js
+		
+		Data Streaming Applications
+		JSON Based Applications
+		Input/Output based Applications 
+		
+		login request = {"username":username,"password":password}
+		register request = {"username":username,"password":password,"address":{"hno":hno,"place":place},"phone":[phone1:phone1,phone2:phone2]}
+		
+		three components 
+		1) Import required modules => require => load nodejs modules 
+		2) Create Server 
+		3) Read Request and Return Response 
+		
+		1) var http = require("http")
+		2) http.createServer() 8081 listen method 
+		
+		  http.createServer( function(req,res){
+		    //send the HTTP header
+			//HTTP Status 200 : ok 
+			// content type : text/plain
+			
+			res.writeHead(200, { 'Content-Type' : 'text/plain'})
+			res.end('Hello World\n');
+		 }).listen(8081);
+		
+		https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#client_error_responses
+
+         REPL Terminal 
+		 Read , Eval , Print , Loop 
+		 
+		 Package Manager (NPM) 
+		  
+		 Modules into my Node js Application 
+		 
+		 npm install <Module Name>
+		 
+		 npm install express 
+		 
+		 var express = require('express');
+		 
+		 npm install lodash
+		 
+		   "lodash": "^4.17.21",
+		   
+		   "lodash": "^3.17.21", 
+		 
+		 npm -> node package manager -> is used to manage the application
+		 npx -> node package execute  -> 
+	
+		
+		https://www.npmjs.com/package/express
+		
+		MEAN MERN 
+		
+		Express js 
+		
+		http://localhost:8081/login => req => {username,password} res => {success/failure}
+		
+		Express js is a Node js web application server framework 
+		designed for building single page,multi page and hybrid web applications 
+		
+		npm install express 
+		
+		create node express application
+		
+		npx express-generator app-name /  create a node application and then install express / cdn
+		
+		
+		GET    => Request for one or more data 
+              cannot pass data in body
+
+		POST  => Insert a record into database
+					   pass data in body
+
+		PUT  => Update a record into database 
+					  
+		DELETE => delete a record from the database
+
+		https://nodejs.dev/en/api/v19/documentation/
+		
+		Callbacks => asynchronous way of programming
+		
+		
+		input.txt => Welcome back to Node Js
+		
+		
+		==========================================================
+		Blocking Code
+		
+		var fs = require("fs");
+		var data = fs.readFileSync("input.txt");
+		
+		console.log(data.toString());
+		console.log("Program Ended");
+		
+		===========================================================
+		
+		Non - Blocking Code
+		
+		var fs = require("fs");
+		var data = fs.readFile("input.json",function(err,data){
+			if(err) return console.log(err);
+			console.log(data.toString());
+		})
+		console.log("Program Ended");
+		
+		============================================================
+		
+		Event Driven Programming 
+		
+		var buffer = new Buffer(10) => 10 octet streams of data(uninitialised)
+		
+		var buffer = new Buffer([10,20,30,40,50]); 
+		
+		var buffer = new Buffer("string1"); ["string","string1"]
+		
+		Streams => Streams are objects that let you read data from a source and write data to source
+		
+		Readable  -- used for read operation 
+		Writable  -- used for write operation
+		Duplex    -- used for both read and write operation
+		Transform -- type of duplex stream where output is based on input 
+		
+		Piping the Streams 
+		
+		piping is a mechanism where we provide the output of one stream as the input to other stream
+		
+		File System 
+		
+		https://github.com/RuthvikSai2015/ReactJsSession2
+		
+		Global Objects 
+		
+		available in all modules 
+		
+		Express is a Node js web application framework 
+		
+		=> Handle HTTP requests
+		
+		=> dynamically render HTML Pages based on passing arguments
+		
+		=> Routing 
+		
+		=> localhost:3000/api/createUser 
+		   /updateUser 
+		   /retrieveDetails 
+		   /deleteDetails
+		   
+		body-parser => handle JSON,Text,XML, encoded data
+		
+		cookie-parser => parse request header and populate req.cookies 
+		
+		multer => handle form-data/multipart
+		
+		npm install body-parser
+		
+		npm install cookie-parser
+		
+		npm install multer 
+		
+		res.end() is used to send text to browser
+		
+		ejs => express javascript files 
+		
+		html => ejs 
+		
+		npm install ejs
+		
+		https://ejs.co/
+		
+		ejs => Embedded Java script
+		
+		=========================================================================
+		
+		React Js is a front-end javascript library for building user interfaces based on components
+		Node is a server provides the run time environment 
+		Express is a back-end nodejs framwork for building web applications such as b2b and b2c
+
+		
+        npm install nodemon
+
+        package.json => "start": "nodemon ./bin/www"	
+		
+		EJS 
+
+        Tag1: Scriptlet <% %>
+        Tag2: Declaration <%= %>
+        Tag3: Comment <%# %>
+		
+		Task:
+		
+		prepare get url like /employee which displays employee info
+		
+		Modules 
+		
+		1. Node js Built in Modules 
+		
+	       Ex: fs, http , url 
+		   
+		   Syntax: let varName = require('modulename')
+		            let http = require('http')
+					
+	    2. Third Party Modules => Installed on Node js server explicitly with npm tool
+		
+		   Ex: express, ejs , nodemon , mongodb
+		   
+		    Syntax : npm install/i <modulename>
+			
+		If developer installs any 3rd party module it will be stored in "node_modules" folder
+
+        3. User defined Modules 		
+            exports: varName : any []
+			
+			
+	===============================================================================
+	
+	    Initialising Node js Project
+		
+		npm init --yes <!-- generated package.json -->
+		
+		Form handling in ejs 
+		
+    ============================================================
+	
+	    Database => storing the data (persist) 
+		
+		SQL and NoSQL 
+		
+		SQL => Structured Query Language 
+		
+		schema => Plan or representation (fixed schema) 
+		table => Students => rollno,name,class,section,address,marks,fromwhichstandard
+		                     50 = 6 columns data , 1 column data 
+							 51 = 7 columns data
+		rows/columns
+		queries => fetch,delete,add,modify 
+		SQL, PostgreSQL, Oracle , MySQL 
+		table students
+		table1 course 
+		table2 dept 
+		RDBMS 
+		  
+		NoSQL => No Structure Maintained , MongoDB 
+		schema => dynamic schema 
+		           50 = 6 columns data
+				   51 = 7 columns data
+				   52 = 10 columns data
+                   53 = 5 columns data 	
+
+        JSON Data based (key value pairs)
+        Table        =======     Collections 	
+        rows         =====       Document 
+        columns      =====       Fields
+		Primary Key  =====       _id provided by MongoDB 
+		
+		Mongo Shell
+		MongoDB => Mongodb Compass, Robo 3T , nosqlbooster 
+		
+		https://www.mongodb.com/try/download/compass
+		
+		commands
+		
+		=> show dbs => currently available databases in the mongodb 
+		
+		=> use <databasename> 
+		
+		=> show collections
+		
+		NodeJs Server Interaction with MongoDB
+		
+		Node Modules 
+		+++++++++++++++++
+		1. http module 
+		2. fs 
+		3. url 
+		
+		Third Party Module
+		MongoClient Module => Nodejs establishes connection with MongoDb Server
+		
+		Step1: Install MongoDb Module on NodejS Server
+		       npm i mongodb
+			   
+		Step2: write one program(js) to connect with MongoDb server
+		
+		https://www.mongodb.com/try/download/community
+		
+		Advantages : 
+		
+		=> Schema less database 
+		=> Scalability 
+		=> faster to access the data 
+		
+		1. Create a database : use <databasename>
+		                       
+		2. Create a collection : db.createCollection("collectionname",options)
+		   options => memory size and indexing 
+		3. Create a document : db.collectionname.insert(document)
+		                        {})
+							   db.collectionname.insertOne({}) insert one document inside the collection
+							   db.collectionname.insertMany({}) insert many  document inside the collection
+		
+		db.test.insertMany([
+		{_id:1,firstName:"Savitha","lastName":"Ramesh",dob:"08-09-1993",email:"savi@gmail.com"},
+		{_id:2,firstName:"Kumari","lastName":"Rao",dob:"08-09-1994",email:"kumari@gmail.com"},
+		{_id:3,firstName:"Krishna","lastName":"Sri",dob:"08-09-1995",email:"sri@gmail.com"}
+		])
+		
+		db.test.find({})
+		db.test.find({bookId:1})
+		
+		db.test.find({firstName:"Kumari")}
+		db.test.find({firstName:"Krishna",lastName:"Sri"})
+		
+		mongoClient.connect(databaseUrl, callback acknowledgement)
+		
+		https://www.tutorialspoint.com/mongodb/mongodb_datatype.htm
+		
+		dbObject.collection('students').find({}) => return all the records
+		
+		insertOne()
+		insertMany()
+		find()
+		findOne()
+		deleteOne()
+		deleteMany()
+		updateOne()
+		updateMany()
+		
+		CRUD Create => insert() 
+		     Retrieval => find()
+			 Update => update()
+			 Delete => delete()
+			 
+			 https://www.npmjs.com/package/mongoose
+		  
+	
+			  
+	 
+	 
+	 
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	 
+	 
+	
+	
+	
+	
+	
+	  
+	  
+					  
+		
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	
+	
+		
+		
+		
+		
+  
+        
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+   
+
+ 
+ 
+ 
+
+
+  
+
+  
+  
+  
+
+
+ 
+
+
+
+
+ 
+

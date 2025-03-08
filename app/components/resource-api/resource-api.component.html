@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-3">
+        {{ userList.hasValue() }}
+    </div>
+    <div class="col-3">
+        @for (list of userList.value(); track $index){
+            <li>{{list.name}}-{{list.username}}</li>
+        }
+    </div>
+    <div class="col-3">
+        {{ userList.isLoading() }}
+    </div>
+</div>
