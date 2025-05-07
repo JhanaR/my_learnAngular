@@ -18,7 +18,7 @@ import { ResourceApiComponent } from './components/resource-api/resource-api.com
 export const routes: Routes = [
     {
         path:'',
-        redirectTo:'resource-api',
+        redirectTo:'dataBinding',
         pathMatch:'full'
     },
     {
