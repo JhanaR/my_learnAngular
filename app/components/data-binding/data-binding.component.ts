@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+// import {SharedDataService} from '../../Services/shared-data.service'
+
 
 @Component({
   selector: 'app-data-binding',
@@ -9,9 +11,15 @@ import { Router } from '@angular/router';
   styleUrl: './data-binding.component.css'
 })
 export class DataBindingComponent {
+  // dummyData : any;
+  // constructor(private _sharedData : SharedDataService) {
+  //   this.dummyData = this._sharedData.userData
+  // }
   firstName: string = "Hevan";
   rollNo: number = 123;
-  isActive: boolean = true;
+  isActive = true;
+  lastName: string;
+  isWorking: boolean = false;
   currentDate: Date = new Date();
   myPlaceholder: string = "Enter full Name";
   div1ClassName: string = "bg-primary";
@@ -21,7 +29,7 @@ export class DataBindingComponent {
     console.log(this.firstName);
     this.isActive = false;
     console.log(this.isActive )
-    // this.showWelcomeMessage ()
+    this.lastName = "Karthik"
   }
 
   showWelcomeMessage () {
