@@ -1,0 +1,39 @@
+<!-- Root container with dark mode class -->
+<div [ngClass]="{ 'dark-mode': isDarkMode }" class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Profile Dashboard</h1>
+      <button (click)="isDarkMode = !isDarkMode">
+        Toggle Dark Mode
+      </button>
+    </header>
+  
+    <!-- Sidebar -->
+    <aside class="sidebar" [ngStyle]="{ 'background-color': sidebarColor }">
+      <label>Sidebar Color:</label>
+      <input [(ngModel)]="sidebarColor" type="text" placeholder="Color">
+    </aside>
+  
+    <!-- Main Content -->
+    <main class="content">
+      <label>Enter your name:</label>
+      <input [(ngModel)]="username" type="text" placeholder="Name">
+  
+      <p 
+        [ngClass]="{ 'highlight': isHighlighted }"
+        [style.color]="textColor">
+        Hello, {{ username || 'Guest' }}!
+      </p>
+  
+      <button (click)="isHighlighted = !isHighlighted">
+        Toggle Highlight
+      </button>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="footer">
+      <small>&copy; 2025 Profile App</small>
+    </footer>
+  </div>
+  

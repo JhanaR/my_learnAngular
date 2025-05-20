@@ -1,0 +1,35 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: brown;
+  }
+  
+  .header, .footer {
+    background-color: #aec4d2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .sidebar {
+    padding: 1rem;
+    width: 200px;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .dark-mode {
+    background-color: #ea7dc2;
+    padding: 1rem;
+    width: 400px;
+    height: 430px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
