@@ -1,8 +1,8 @@
 <!-- <h1 class="text-main2">Angular 19</h1> -->
 <!-- <p class="text-main1">{{title}}</p>
 <p class="text-main">Main component</p> -->
-<!-- <app-admin></app-admin>
-<app-user></app-user> -->
+ <!-- <app-admin></app-admin> -->
+<!-- <app-user></app-user> -->
 <!-- <app-data-binding></app-data-binding> -->
 <!-- <app-ng-if> </app-ng-if> -->
 <!-- <app-ng-for></app-ng-for> -->
@@ -13,8 +13,16 @@
 <!-- <app-linked-signal></app-linked-signal> -->
 <!-- <app-template-form></app-template-form> -->
 <!-- <app-reactive-form></app-reactive-form> -->
- <!-- <app-resource-api></app-resource-api> -->
+<!-- <app-resource-api></app-resource-api> -->
+<!-- <app-pipes></app-pipes> -->
+<!-- <app-profile></app-profile> -->
+<!-- <app-class-try></app-class-try> -->
+ <app-profile-card></app-profile-card>
+  
 
+<!-- <li class="nav-item"  style="margin-top:-12px;">
+          <a class="nav-link active" routerLink="admin">Admin</a>
+        </li> -->
 <!-- <table style="width: 100%;">
     <thead>
         <td>
@@ -26,7 +34,7 @@
     </thead>
 
 </table> -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="javascript:void(0)">Logo</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -34,11 +42,9 @@
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
-        <!-- <li class="nav-item"  style="margin-top:-12px;">
-          <a class="nav-link active" routerLink="admin">Admin</a>
-        </li> -->
+        
         <li class="nav-item" >
-          <a class="nav-link active" routerLink="admin">Admin</a>
+          <a class="nav-link" routerLink="admin">Admin</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'dataBinding'">Data Binding</a>
@@ -70,6 +76,7 @@
             API Call
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="customer">Customer</a></li>
             <li><a class="dropdown-item" routerLink="get-api">GET-api</a></li>
             <li><a class="dropdown-item" routerLink="post-api">POST-api</a></li>
             <li><a class="dropdown-item" routerLink="put-api">PUT-api</a></li>
@@ -77,7 +84,13 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" routerLink="Resource Api">Resource Api</a>
+          <a class="nav-link" routerLink="resource-api">Resource Api</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="life-cycle">Life Cycle</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="profile">Profile</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -87,4 +100,4 @@
     </div>
   </div>
 </nav>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->

@@ -3,6 +3,8 @@
 import { Component } from '@angular/core';
 // import { TemplateFormComponent } from './components/forms/template-form/template-form.component';
 import { RouterLink, RouterOutlet} from '@angular/router';
+import { ProfileCardComponent } from "./Retry/profile-card/profile-card.component";
+// import { ClassTryComponent } from "./Retry/class-try/class-try.component";
 // import { ReactiveFormComponent } from './components/forms/reactive-form/reactive-form.component';
 // import { LinkedSignalComponent } from './components/linked-signal/linked-signal.component';
 // import { NgClassComponent } from "./components/ng-class/ng-class.component";
@@ -18,8 +20,8 @@ import { RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  // imports: [RouterOutlet, RouterLink,AdminComponent,UserComponent,DataBindingComponent,NgIfComponent,NgForComponent,NgClassComponent,NgStyleComponent,ControlStatementComponent,SignalComponent,LinkedSignalComponent,TemplateFormComponent]
-   imports: [RouterOutlet,RouterLink],
+  // imports: [ClassTryComponent,RouterOutlet, RouterLink,AdminComponent,UserComponent,DataBindingComponent,NgIfComponent,NgForComponent,NgClassComponent,NgStyleComponent,ControlStatementComponent,SignalComponent,LinkedSignalComponent,TemplateFormComponent]
+  imports: [ProfileCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
